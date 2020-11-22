@@ -1,6 +1,11 @@
 # AVR Development Boards
 Collection of AVR Development Boards
 
+# ATmega4808 Development Board (SMD)
+Development board for the new ATmega4808 with integrated USB-to-serial converter, 32.768MHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
+
+![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
+
 # ATtiny814 Development Board (SMD)
 Development board for ATtiny x14/x04 series with USB to serial converter.
 
