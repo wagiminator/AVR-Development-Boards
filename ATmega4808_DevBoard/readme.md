@@ -1,5 +1,5 @@
 # ATmega4808 Development Board
-Development board for the new ATmega4808 with integrated USB-to-serial converter, 32.768MHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
+Development board for the new ATmega4808 with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
 
 ![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
 
@@ -21,7 +21,7 @@ All microcontrollers have the following features:
 - One 16-bit Real-Time Counter (RTC) running from an external crystal or an internal RC oscillator
 - Three USARTs with fractional baud rate generator, auto-baud, and start-of-frame detection
 - Master/slave Serial Peripheral Interface (SPI)
-- Master/slave TWI with dual address match, 
+- Master/slave TWI (I²C) with dual address match, 
    - can operate simultaneously as master and slave
    - Standard mode (Sm, 100 kHz)
    - Fast mode (Fm, 400 kHz)
@@ -29,7 +29,7 @@ All microcontrollers have the following features:
 - Event System for core independent and predictable inter-peripheral signaling
 - Configurable Custom Logic (CCL) with up to four programmable Look-up Tables (LUT)
 - One Analog Comparator (AC) with a scalable reference input
-- One 10-bit 150 ksps Analog-to-Digital Converter (ADC)
+- One 10-bit 150 ksps Analog-to-Digital Converter (ADC) with 12 channels
 - Five selectable internal voltage references: 0.55V, 1.1V, 1.5V, 2.5V, and 4.3V
 - Watchdog Timer (WDT) with Window mode, with a separate on-chip oscillator
 - External interrupt on all general purpose pins
@@ -44,10 +44,10 @@ All microcontrollers have the following features:
    - Reset pin: "Reset"
    - Bootloader: "Optiboot (UART0 default pins)"
    - Programmer: "jtag2updi(megaTinyCore)"
-- Connect the UPDI programmer to the UPDI header on the development board. You can find such programmers in my projects or you can use an [Arduino Uno as a UPDI programmer](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
+- Connect the UPDI programmer to the UPDI header on the development board. You can find such programmers in my [projects](https://github.com/wagiminator/AVR-Programmer) or you can use an [Arduino Uno as a UPDI programmer](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
 - Go to "Tools" -> "Burn Bootloader"
 - Disconnect the UPDI programmer and connect the development board via USB to your computer
-- Open one of the attached example sketches and click the "Upload" button
+- Open one of the [example sketches](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_firmware.zip) and click the "Upload" button
 
 ![IMG_20201122_081520_x.jpg](https://image.easyeda.com/pullimage/jHPM6GLFS4yb8MbdF48letGdqqN7pdmElsiTVPeI.jpeg)
 ![IMG_20201122_081532_x.jpg](https://image.easyeda.com/pullimage/x5FqI2qEoBpFqv6xOdfeim12Fc5r4ZIUS1q72vov.jpeg)
