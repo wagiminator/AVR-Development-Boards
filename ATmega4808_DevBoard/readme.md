@@ -5,7 +5,8 @@ Development board for the new ATmega4808 series with integrated USB-to-serial co
 
 # Features of the megaAVR
 The ATmega4808 microcontrollers are part of the megaAVR 0-series, which uses the AVR processor with hardware multiplier running at up to 20 MHz from the internal calibrated oscillator. The series uses the latest technologies from Microchip with a flexible and low-power architecture, including Event System and SleepWalking, accurate analog features, and advanced peripherals.
-The following microcontrollers can be used with this development board:
+
+The following microcontrollers (TQFP-32 package) can be used with this development board:
 
 |Controller|Flash|SRAM|EEPROM|
 |:-|:-|:-|:-|
@@ -56,7 +57,7 @@ To test the board and to learn a thing or two about the new megaAVR, four small 
 |:-|:-|
 |ATmega4808_Hello_World.ino|This sketch flashes the built-in LED at 1 Hz and sends a message once per second via the serial interface, which can be displayed on the serial monitor at 9600 baud.|
 |ATmega4808_RTC.ino|This sketch implements a real-time clock using the external 32.768 kHz crystal. Every five seconds the current time and date is sent via the serial interface, which can be displayed on the serial monitor at 9600 baud.|
-|ATmega4808_blink_PIT.ino|One of the new features is the Periodic Interrupt Timer (PIT), which can run on the internal ultra low-power 32.768 kHz oscillator while the CPU is in sleep mode power down. In this sketch, the PIT wakes the sleeping CPU twice per second in order to toggle the built-in LED.|
+|ATmega4808_Blink_PIT.ino|One of the new features is the Periodic Interrupt Timer (PIT), which can run on the internal ultra low-power 32.768 kHz oscillator while the CPU is in sleep mode power down. In this sketch, the PIT wakes the sleeping CPU twice per second in order to toggle the built-in LED.|
 |ATmega4808_Blink_CIP.ino|One of the coolest new features are the Core Independent Peripherals (CIPs). Asynchronous peripherals can be connected directly to one another via the Event System (EVSYS) and thus work independently of the CPU. In this example, the built-in LED is flashing while the CPU is in sleep mode power down all the time ... without ever waking up.|
 
 # References, Links and Notes
