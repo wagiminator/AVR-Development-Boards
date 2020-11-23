@@ -2,25 +2,17 @@
 Collection of AVR Development Boards
 
 ## [ATmega4808 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATmega4808_DevBoard)
-Development board for the new ATmega4808 with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
+Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
 
 ![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
 
 ## [ATtiny3216 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny3216_DevBoard)
-Development board for ATtiny x16/x06 series with USB to serial converter.
-
-Getting started with the new ATtiny chips: http://www.technoblogy.com/show?2OCH
-
-megaTinyCore: https://github.com/SpenceKonde/megaTinyCore
+Development board for ATtiny x16/x06 series with USB to serial converter and Arduino IDE support.
 
 ![IMG_20200331_164741_x.jpg](https://image.easyeda.com/pullimage/7tM9ioPeKiZ6gWvDBtPoJUbdGFymfoHjVxmAQx5u.jpeg)
 
 ## [ATtiny814 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard)
-Development board for ATtiny x14/x04 series with USB to serial converter.
-
-Getting started with the new ATtiny chips: http://www.technoblogy.com/show?2OCH
-
-megaTinyCore: https://github.com/SpenceKonde/megaTinyCore
+Development board for ATtiny x14/x04 series with USB to serial converter and Arduino IDE support.
 
 ![IMG_20191221_192623_x.jpg](https://image.easyeda.com/pullimage/eMLt2WkMxSGxbHDbiItUHpYSA7RA7Lz7rFaOP3yF.jpeg)
 
