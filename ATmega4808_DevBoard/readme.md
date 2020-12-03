@@ -34,7 +34,7 @@ All microcontrollers have the following features:
 - External interrupt on all general purpose pins
 
 # Pinout
-[ATmega4808_DevBoard_pinout.png](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pinout.png)
+![ATmega4808_DevBoard_pinout.png](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pinout.png)
 
 # Preparing Arduino IDE and Installing Bootloader
 - [Install MegaCoreX](https://github.com/MCUdude/MegaCoreX#how-to-install)
