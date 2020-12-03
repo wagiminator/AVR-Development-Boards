@@ -33,6 +33,9 @@ All microcontrollers have the following features:
 - Watchdog Timer (WDT) with Window mode, with a separate on-chip oscillator
 - External interrupt on all general purpose pins
 
+# Pinout
+[ATmega4808_DevBoard_pinout.png](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pinout.png)
+
 # Preparing Arduino IDE and Installing Bootloader
 - [Install MegaCoreX](https://github.com/MCUdude/MegaCoreX#how-to-install)
 - Open the Arduino IDE
@@ -59,13 +62,15 @@ To test the board and to learn a thing or two about the new megaAVR, four small 
 |ATmega4808_Blink_CIP.ino|One of the coolest new features are the Core Independent Peripherals (CIPs). Asynchronous peripherals can be connected directly to one another via the Event System (EVSYS) and thus work independently of the CPU. In this example, the built-in LED is flashing while the CPU is in sleep mode power down all the time ... without ever waking up.|
 
 # References, Links and Notes
-1. [megaAVR 0-series Family Data Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/megaAVR0-series-Family-Data-Sheet-DS40002015B.pdf)
-2. [ATmega4808 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega4808-09-DataSheet-DS40002173B.pdf)
-3. [TB3262: Getting Started with Writing C-Code for AVR MCUs](http://ww1.microchip.com/downloads/en/Appnotes/AVR1000b-Getting-Started-Writing-C-Code-for-AVR-DS90003262B.pdf)
-4. [TB3213: Getting Started with RTC](http://ww1.microchip.com/downloads/en/Appnotes/TB3213-Getting-Started-with-RTC-DS90003213B.pdf)
-5. [AN2451: Getting Started with Core Independent Peripherals](http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-Peripherals-on-AVR-MCU-00002451C.pdf)
-6. [AN2515: AVR Low-Power Techniques](http://ww1.microchip.com/downloads/en/Appnotes/AN2515-AVR-Low-Power-Techniques-00002515C.pdf)
-7. [AN2543: Temperature Logger with ATtiny817 and SD Card](http://ww1.microchip.com/downloads/en/Appnotes/AN2543-Temperature-Logger-with-ATtiny817-and-SD-Card-v2-00002543C.pdf)
+1. [MegaCoreX by MCUdude](https://github.com/MCUdude/MegaCoreX)
+2. [megaAVR 0-series Family Data Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/megaAVR0-series-Family-Data-Sheet-DS40002015B.pdf)
+3. [ATmega4808 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega4808-09-DataSheet-DS40002173B.pdf)
+4. [TB3262: Getting Started with Writing C-Code for AVR MCUs](http://ww1.microchip.com/downloads/en/Appnotes/AVR1000b-Getting-Started-Writing-C-Code-for-AVR-DS90003262B.pdf)
+5. [TB3213: Getting Started with RTC](http://ww1.microchip.com/downloads/en/Appnotes/TB3213-Getting-Started-with-RTC-DS90003213B.pdf)
+6. [AN2451: Getting Started with Core Independent Peripherals](http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-Peripherals-on-AVR-MCU-00002451C.pdf)
+7. [AN2515: AVR Low-Power Techniques](http://ww1.microchip.com/downloads/en/Appnotes/AN2515-AVR-Low-Power-Techniques-00002515C.pdf)
+8. [AN2543: Temperature Logger with ATtiny817 and SD Card](http://ww1.microchip.com/downloads/en/Appnotes/AN2543-Temperature-Logger-with-ATtiny817-and-SD-Card-v2-00002543C.pdf)
+9. [Core Independent Peripherals Video by Microchip](https://youtu.be/TcqpmupVCXQ)
 
 ![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
 ![IMG_20201122_081520_x.jpg](https://image.easyeda.com/pullimage/jHPM6GLFS4yb8MbdF48letGdqqN7pdmElsiTVPeI.jpeg)
