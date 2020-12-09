@@ -46,7 +46,7 @@ All microcontrollers have the following features:
    - Reset pin: "Reset"
    - Bootloader: "Optiboot (UART0 default pins)"
    - Programmer: "jtag2updi(megaTinyCore)"
-- Connect the UPDI programmer to the UPDI header on the development board. You can find such programmers in my [projects](https://github.com/wagiminator/AVR-Programmer) or you can use an [Arduino Uno as a UPDI programmer](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
+- Connect the UPDI programmer to the UPDI header on the development board. You can find such programmers in my [projects](https://github.com/wagiminator/AVR-Programmer) or you can use an [Arduino Uno as a UPDI programmer](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md). Do NOT use high voltage programming!
 - Go to "Tools" -> "Burn Bootloader"
 - Disconnect the UPDI programmer and connect the development board via USB to your computer
 - Open one of the [example sketches](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_firmware.zip) and click the "Upload" button
