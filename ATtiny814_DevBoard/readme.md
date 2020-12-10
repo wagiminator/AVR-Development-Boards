@@ -45,7 +45,7 @@ Reference: https://github.com/SpenceKonde/megaTinyCore
 # Preparing Arduino IDE
 - [Install megaTinyCore](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md)
 - Open the Arduino IDE
-- Go to "Tools" -> "Board" -> "MegaCoreX" and select your chip
+- Go to "Tools" -> "Board" -> "megaTinyCore" and select your chip
 - Go to "Tools" and set the desired board options
 - Go to "Tools" -> "Programmer" and select "jtag2updi(megaTinyCore)"
 - Connect the UPDI programmer to the UPDI header on the development board. You can find such programmers in my [projects](https://github.com/wagiminator/AVR-Programmer) or you can use an [Arduino Uno as a UPDI programmer](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md).
