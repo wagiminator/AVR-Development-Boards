@@ -78,7 +78,7 @@ The even more powerful AVR DA/DB family of microcontrollers (TQFP-32 package) ca
 - Event System (EVSYS)
 - Watchdog Timer (WDT) with Window Mode
 
-In order to be able to use the AVR DA/DB microcontroller with the Arduino IDE, [DxCore](https://github.com/SpenceKonde/DxCore) must be installed.
+In order to be able to use the AVR DA/DB microcontrollers with the Arduino IDE, [DxCore](https://github.com/SpenceKonde/DxCore) must be installed.
 
 # References, Links and Notes
 1. [MegaCoreX by MCUdude](https://github.com/MCUdude/MegaCoreX)
