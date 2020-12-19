@@ -1,5 +1,5 @@
 # ATmega4808 Development Board
-Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE.
+Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the new AVR DA/DB family of microcontrollers.
 
 # Features of the megaAVR
 The ATmega4808 microcontrollers are part of the megaAVR 0-series, which uses the AVR processor with hardware multiplier running at up to 20 MHz from the internal calibrated oscillator. The series uses the latest technologies from Microchip with a flexible and low-power architecture, including Event System and SleepWalking, accurate analog features, and advanced peripherals.
@@ -60,6 +60,25 @@ To test the board and to learn a thing or two about the new megaAVR, four small 
 |ATmega4808_RTC.ino|This sketch implements a real-time clock using the external 32.768 kHz crystal. Every five seconds the current time and date is sent via the serial interface, which can be displayed on the serial monitor at 9600 baud.|
 |ATmega4808_Blink_PIT.ino|One of the new features is the Periodic Interrupt Timer (PIT), which can run on the internal ultra low-power 32.768 kHz oscillator while the CPU is in sleep mode power down. In this sketch, the PIT wakes the sleeping CPU twice per second in order to toggle the built-in LED.|
 |ATmega4808_Blink_CIP.ino|One of the coolest new features are the Core Independent Peripherals (CIPs). Peripherals can be connected directly to one another via the Event System (EVSYS) and thus work independently of the CPU. In this example, the built-in LED is flashing while the CPU is in sleep mode power down all the time ... without ever waking up.|
+
+# Using the AVR DA/DB Family of Microcontrollers
+The even more powerful AVR DA/DB family of microcontrollers (TQFP-32 package) can also be used with this board. Some of their features (depending on the model):
+- Up to 128 KB of flash and 16 KB of SRAM
+- Running at up to 24 MHz with internal oscillator (or even more with overclocking)
+- 12-bit Differential Analog-to-Digital Converter (ADC) with 14 channels
+- 10-bit Digital-to-Analog Converter (DAC)
+- 3 Analog Comparators (AC)
+- 2 independent OpAmps with integrated feedback resistor network
+- Zero-Cross Detector (ZCD)
+- Peripheral Touch Controller (PTC) with 22 self-capacitance and 121 mutual capacitance touch channels
+- 4 Multi-Voltage I/O channels capable of bi-directional communication with external devices running at a higher or lower voltage than the MCU itself
+- 3 UART, 2 SPI, 2 I2C
+- 4 16-bit timers
+- Configurable Custom Logic (CCL)
+- Event System (EVSYS)
+- Watchdog Timer (WDT) with Window Mode
+
+In order to be able to use the AVR DA/DB microcontroller with the Arduino IDE, [DxCore](https://github.com/SpenceKonde/DxCore) must be installed.
 
 # References, Links and Notes
 1. [MegaCoreX by MCUdude](https://github.com/MCUdude/MegaCoreX)
