@@ -38,7 +38,7 @@ Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | 
 Reference: https://github.com/SpenceKonde/megaTinyCore
 
 # Pinout
-![ATtiny814_pinout.png]/https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_pinout.png)
+![ATtiny814_pinout.png](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_pinout.png)
 
 # Preparing Arduino IDE
 - [Install megaTinyCore](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md)
