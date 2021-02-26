@@ -57,7 +57,8 @@ Reference: https://github.com/SpenceKonde/megaTinyCore
 - Mini UPDI Programmer based on ATtiny1604: https://easyeda.com/wagiminator/attiny1604-updi-programmer
 - Development board for ATtiny x16/x06 series: https://easyeda.com/wagiminator/y-attiny3216-development-board-smd
 
-![IMG_20191221_192623_x.jpg](https://image.easyeda.com/pullimage/eMLt2WkMxSGxbHDbiItUHpYSA7RA7Lz7rFaOP3yF.jpeg)
+![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_DevBoard_pic1.jpg)
+![ATtiny814_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_DevBoard_pic2.jpg)
 
 # License
 

@@ -9,12 +9,12 @@ Development board for the new ATmega4808 series with integrated USB-to-serial co
 ## [ATtiny3216 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny3216_DevBoard)
 Development board for ATtiny x16/x06 series with USB to serial converter and Arduino IDE support.
 
-![IMG_20200331_164741_x.jpg](https://image.easyeda.com/pullimage/7tM9ioPeKiZ6gWvDBtPoJUbdGFymfoHjVxmAQx5u.jpeg)
+![ATtiny3216_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny3216_DevBoard/ATtiny3216_DevBoard_pic1.jpg)
 
 ## [ATtiny814 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard)
 Development board for ATtiny x14/x04 series with USB to serial converter and Arduino IDE support.
 
-![IMG_20191221_192623_x.jpg](https://image.easyeda.com/pullimage/eMLt2WkMxSGxbHDbiItUHpYSA7RA7Lz7rFaOP3yF.jpeg)
+![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_DevBoard_pic1.jpg)
 
 ## [ATtiny10 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny10_DevBoard)
 Simple breakout board for the ATtiny10 microcontroller.
