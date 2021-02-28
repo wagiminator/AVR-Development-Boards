@@ -1,6 +1,8 @@
 # AVR Development Boards
 Collection of AVR Development Boards
 
+![AVR_DevBoards.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/AVR_DevBoards.jpg)
+
 ## [ATmega4808 Development Board (SMD)](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATmega4808_DevBoard)
 Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the new AVR DA/DB family of microcontrollers.
 
