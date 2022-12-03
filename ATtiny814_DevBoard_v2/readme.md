@@ -12,9 +12,9 @@ GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
 ADC Channels | 9 | 9 | 9 | 9
 DAC | 0 | 0 | 0 | 0
 PWM Channels | 6 | 6 | 6 | 6
-Timer Type A | 1 | 1 | 1 | 1
-Timer Type B| 1 | 1 | 1 | 1
-Timer Type D | 0 | 0 | 0 | 0
+Timer/Counter A | 1 | 1 | 1 | 1
+Timer/Counter B| 1 | 1 | 1 | 1
+Timer/Counter D | 0 | 0 | 0 | 0
 Interfaces | UART, SPI, I2C | UART, SPI, I2C | UART, SPI, I2C | UART, SPI, I2C
 Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz
 
@@ -27,9 +27,9 @@ GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
 ADC Channels | 9 | 9 | 9 | 14
 DAC | 1 | 1 | 1 | 3
 PWM Channels | 6 | 6 | 6 | 6
-Timer Type A | 1 | 1 | 1 | 1
-Timer Type B | 1 | 1 | 1 | 2
-Timer Type D | 1 | 1 | 1 | 1
+Timer/Counter A | 1 | 1 | 1 | 1
+Timer/Counter B | 1 | 1 | 1 | 2
+Timer/Counter D | 1 | 1 | 1 | 1
 Interfaces | UART, SPI, I2C | UART, SPI, I2C | UART, SPI, I2C | UART, SPI, I2C
 Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz
 
@@ -42,9 +42,9 @@ GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
 ADC Channels | 9 | 9 | 9 | 9
 DAC | 0 | 0 | 0 | 0
 PWM Channels | 6 | 6 | 6 | 6
-Timer Type A | 1 | 1 | 1 | 1
-Timer Type B | 2 | 2 | 2 | 2
-Timer Type D | 0 | 0 | 0 | 0
+Timer/Counter A | 1 | 1 | 1 | 1
+Timer/Counter B | 2 | 2 | 2 | 2
+Timer/Counter D | 0 | 0 | 0 | 0
 Interfaces | 2xUART, SPI, I2C | 2xUART, SPI, I2C | 2xUART, SPI, I2C | 2xUART, SPI, I2C
 Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz
 
