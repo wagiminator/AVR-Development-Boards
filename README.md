@@ -8,7 +8,7 @@ Development board for the new ATmega4808 series with integrated USB-to-serial co
 
 ![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
 
-## [ATtiny814 Development Board v2](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard)
+## [ATtiny814 Development Board v2](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard_v2)
 Development board for ATtiny x04/x14/x24 series with USB to serial converter, integrated SerialUPDI programmer and Arduino IDE support.
 
 ![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic1.jpg)
