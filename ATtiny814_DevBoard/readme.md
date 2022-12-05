@@ -1,4 +1,4 @@
-# ATtiny x04/x14/x25 Development Board
+# ATtiny x04/x14/x24 Development Board
 Development board for ATtiny x04/x14/x24 series with USB to serial converter and Arduino IDE support.
 
 ![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_DevBoard_pic1.jpg)
