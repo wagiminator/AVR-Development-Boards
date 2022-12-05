@@ -1,6 +1,8 @@
 # ATtiny x04/x14/x24 Development Board v2
 Development board for ATtiny x04/x14/x24 series with USB to serial converter, integrated SerialUPDI programmer and Arduino IDE support.
 
+![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic1.jpg)
+
 # Features of the tinyAVR
 
  Specifications |  ATtiny204|  ATtiny404  |  ATtiny804  |    ATtiny1604
@@ -72,7 +74,6 @@ The integrated CH340N USB to serial converter can also be used as a SerialUPDI p
 - The ATtiny 2-Series: http://www.technoblogy.com/show?3UKF
 - megaTinyCore: https://github.com/SpenceKonde/megaTinyCore
 
-![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic1.jpg)
 ![ATtiny814_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic2.jpg)
 
 # License
