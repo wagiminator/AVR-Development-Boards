@@ -1,6 +1,11 @@
 # ATmega4808 Development Board
 Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the new AVR DA/DB family of microcontrollers.
 
+![ATmega4808_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pic1.jpg)
+
+# Pinout
+![ATmega4808_DevBoard_pinout.png](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pinout.png)
+
 # Features of the megaAVR
 The ATmega4808 microcontrollers are part of the megaAVR 0-series, which uses the AVR processor with hardware multiplier running at up to 20 MHz from the internal calibrated oscillator. The series uses the latest technologies from Microchip with a flexible and low-power architecture, including Event System and SleepWalking, accurate analog features, and advanced peripherals.
 
@@ -32,9 +37,6 @@ All microcontrollers have the following features:
 - Five selectable internal voltage references: 0.55V, 1.1V, 1.5V, 2.5V, and 4.3V
 - Watchdog Timer (WDT) with Window mode, with a separate on-chip oscillator
 - External interrupt on all general purpose pins
-
-# Pinout
-![ATmega4808_DevBoard_pinout.png](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pinout.png)
 
 # Preparing Arduino IDE and Installing Bootloader
 - [Install MegaCoreX](https://github.com/MCUdude/MegaCoreX#how-to-install)
@@ -91,10 +93,10 @@ In order to be able to use the AVR DA/DB microcontrollers with the Arduino IDE, 
 8. [AN2543: Temperature Logger with ATtiny817 and SD Card](http://ww1.microchip.com/downloads/en/Appnotes/AN2543-Temperature-Logger-with-ATtiny817-and-SD-Card-v2-00002543C.pdf)
 9. [Core Independent Peripherals Video by Microchip](https://youtu.be/TcqpmupVCXQ)
 
-![IMG_20201122_141215_x.jpg](https://image.easyeda.com/pullimage/bv7UeEqS38jVMSSA5YwmlywENO5LUWd5GpY35DGX.jpeg)
+![ATmega4808_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pic2.jpg)
+![ATmega4808_DevBoard_pic3.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pic3.jpg)
 ![IMG_20201122_081520_x.jpg](https://image.easyeda.com/pullimage/jHPM6GLFS4yb8MbdF48letGdqqN7pdmElsiTVPeI.jpeg)
 ![IMG_20201122_081532_x.jpg](https://image.easyeda.com/pullimage/x5FqI2qEoBpFqv6xOdfeim12Fc5r4ZIUS1q72vov.jpeg)
-![pic2.jpg](https://github.com/wagiminator/AVR-Development-Boards/blob/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pic2.jpg)
 
 # License
 ![license.png](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)
