@@ -52,8 +52,3 @@ A clock development board with ATtiny85 microcontroller, DS1307 real time clock 
 Small development board for DIP-versions of ATmega8/168/328.
 
 ![ATmega_DevBoard_DIP_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega_DevBoard_DIP/ATmega_DevBoard_DIP_pic1.jpg)
-
-## [MAX3000A Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/MAX3000A_DevBoard)
-CPLD Development Board for Altera EPM3032A/3064A. It's not really an AVR, but it's still an interesting device.
-
-![MAX3000A_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/MAX3000A_DevBoard/MAX3000A_DevBoard_pic1.jpg)
