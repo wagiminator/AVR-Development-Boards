@@ -1,10 +1,10 @@
 # ATtiny x04/x14/x24 Development Board v2
 Development board for ATtiny x04/x14/x24 series with USB to serial converter, integrated SerialUPDI programmer and Arduino IDE support.
 
-![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic1.jpg)
+![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/documentation/ATtiny814_DevBoard_v2_pic1.jpg)
 
 # Pinout
-![ATtiny814_pinout.png](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pinout.png)
+![ATtiny814_pinout.png](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/documentation/ATtiny814_DevBoard_v2_pinout.png)
 
 # Serial Mode Switch
 The integrated CH340N USB to serial converter can also be used as a SerialUPDI programmer, so that no additional hardware is required to flash your firmware. Set the Serial Mode Switch on the board to "P" (Programming Mode) for uploading firmware and to "S" (Serial Mode) for UART communication via USB. You do not need to unplug the board for changing the Serial Mode.
@@ -70,11 +70,13 @@ Note: The 0-series and 1-series parts have a 10-bit single-ended ADC with a samp
 - Now you can upload your sketch.
 
 # References, Links and Notes
-- Getting started with the new ATtiny chips: http://www.technoblogy.com/show?2OCH
-- The ATtiny 2-Series: http://www.technoblogy.com/show?3UKF
-- megaTinyCore: https://github.com/SpenceKonde/megaTinyCore
+- [Getting started with the new ATtiny chips](http://www.technoblogy.com/show?2OCH)
+- [The ATtiny 2-Series](http://www.technoblogy.com/show?3UKF)
+- [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore)
+- [ATtiny814 Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/ATtiny417-814-816-817-DataSheet-DS40002288A.pdf)
 
-![ATtiny814_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic2.jpg)
+![ATtiny814_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/documentation/ATtiny814_DevBoard_v2_pic2.jpg)
+![ATtiny814_pic3.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/documentation/ATtiny814_DevBoard_v2_pic3.jpg)
 
 # License
 

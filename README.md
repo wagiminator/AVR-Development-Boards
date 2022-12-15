@@ -6,19 +6,19 @@ Collection of AVR Development Boards
 ## [ATmega4808 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATmega4808_DevBoard)
 Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the new AVR DA/DB family of microcontrollers.
 
-![ATmega4808_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/ATmega4808_DevBoard_pic1.jpg)
+![ATmega4808_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/documentation/ATmega4808_DevBoard_pic1.jpg)
 
 ## [ATtiny814 Development Board v2](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard_v2)
 Development board for ATtiny x04/x14/x24 series with USB to serial converter, integrated SerialUPDI programmer and Arduino IDE support.
 
-![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/ATtiny814_DevBoard_v2_pic1.jpg)
+![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard_v2/documentation/ATtiny814_DevBoard_v2_pic1.jpg)
 
-## [ATtiny814 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard)
+## [ATtiny814 Development Board v1](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny814_DevBoard)
 Development board for ATtiny x04/x14/x24 series with USB to serial converter and Arduino IDE support.
 
 ![ATtiny814_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny814_DevBoard/ATtiny814_DevBoard_pic1.jpg)
 
-## [ATtiny3216 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny3216_DevBoard)
+## [ATtiny3216 Development Board v1](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny3216_DevBoard)
 Development board for ATtiny x16/x06 series with USB to serial converter and Arduino IDE support.
 
 ![ATtiny3216_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny3216_DevBoard/ATtiny3216_DevBoard_pic1.jpg)
@@ -28,7 +28,7 @@ Simple breakout board for the ATtiny10 microcontroller.
 
 ![ATtiny10_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny10_DevBoard/ATtiny10_DevBoard_pic1.jpg)
 
-## [ATtiny84 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny84_DevBoard)
+## [ATtiny84 Development Board v1](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny84_DevBoard)
 Development Board for ATtiny24/44/84.
 
 ![ATtiny84_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny84_DevBoard/ATtiny84_DevBoard_pic1.jpg)
