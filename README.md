@@ -4,7 +4,7 @@ Collection of AVR Development Boards
 ![AVR_DevBoards.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/AVR_DevBoards.jpg)
 
 ## [ATmega4808 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATmega4808_DevBoard)
-Development board for the new ATmega4808 series with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the new AVR DA/DB family of microcontrollers.
+Development board for the ATmega4808 series microcontrollers with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the AVR DA/DB family of microcontrollers.
 
 ![ATmega4808_DevBoard_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/documentation/ATmega4808_DevBoard_pic1.jpg)
 
