@@ -1,7 +1,12 @@
 # AVR Development Boards
-Collection of AVR Development Boards
+Collection of AVR Development Boards.
 
 ![AVR_DevBoards.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/AVR_DevBoards.jpg)
+
+More development boards and tools can be found here:
+- [SAMD Development Boards and Programmers](https://github.com/wagiminator/SAMD-Development-Boards)
+- [CH55x and other Development Boards](https://github.com/wagiminator/Development-Boards)
+- [AVR Programmers](https://github.com/wagiminator/AVR-Programmer)
 
 ## [ATmega4808 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATmega4808_DevBoard)
 Development board for the ATmega4808 series microcontrollers with integrated USB-to-serial converter, 32.768 kHz crystal for the RTC, 3.3V voltage regulator, support for bootloader and Arduino IDE. Due to a similar pinout, the board also works with the AVR DA/DB family of microcontrollers.
