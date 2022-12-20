@@ -7,7 +7,7 @@ Development board for ATtiny x06/x16/x26 series with USB to serial converter, in
 ![ATtiny3216_pinout.png](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny3216_DevBoard_v2/documentation/ATtiny3216_DevBoard_v2_pinout.png)
 
 # Serial Mode Switch
-The integrated CH340N USB to serial converter can also be used as a SerialUPDI programmer, so that no additional hardware is required to flash your firmware. Set the Serial Mode Switch on the board to "P" (Programming Mode) for uploading firmware and to "S" (Serial Mode) for UART communication via USB. You do not need to unplug the board for changing the Serial Mode.
+The integrated CH340N USB to serial converter can also be used as a SerialUPDI programmer, so that no additional hardware is required to flash your firmware. Set the Serial Mode Switch on the board to "UPDI" for uploading firmware and to "UART" for serial communication via USB. You do not need to unplug the board for changing the Serial Mode.
 
 # Features of the tinyAVR
 
