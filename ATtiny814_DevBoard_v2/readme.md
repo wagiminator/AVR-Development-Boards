@@ -13,7 +13,7 @@ The integrated CH340N USB to serial converter can also be used as a SerialUPDI p
 
  Specifications |  ATtiny204|  ATtiny404  |  ATtiny804  |    ATtiny1604
 :------------ | :------------- | :------------- | :------------- | :-------------
-Flash (program memory)   | 2048 bytes | 4096 bytes | 8192 bytes | 16384 bytes
+Flash | 2048 bytes | 4096 bytes | 8192 bytes | 16384 bytes
 RAM  | 128 bytes | 256 bytes | 512 bytes | 1024 bytes
 EEPROM | 64 bytes | 128 bytes | 128 bytes | 256 bytes
 GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
@@ -28,7 +28,7 @@ Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | 
 
  Specifications |  ATtiny214|  ATtiny414  |  ATtiny814  |    ATtiny1614
 :------------ | :------------- | :------------- | :------------- | :-------------
-Flash (program memory)   | 2048 bytes | 4096 bytes | 8192 bytes | 16384 bytes
+Flash | 2048 bytes | 4096 bytes | 8192 bytes | 16384 bytes
 RAM  | 128 bytes | 256 bytes | 512 bytes | 2048 bytes
 EEPROM | 64 bytes | 128 bytes | 128 bytes | 256 bytes
 GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
@@ -43,7 +43,7 @@ Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | 
 
  Specifications | ATtiny424 | ATtiny824 | ATtiny1624 | ATtiny3224
 :------------ | :------------- | :------------- | :------------- | :-------------
-Flash (program memory)   | 4096 bytes | 8192 bytes | 16384 bytes | 32768 bytes
+Flash | 4096 bytes | 8192 bytes | 16384 bytes | 32768 bytes
 RAM  | 512 bytes | 1024 bytes | 2048 bytes | 3072 bytes
 EEPROM | 128 bytes | 128 bytes | 256 bytes | 256 bytes
 GPIO Pins | 12 (11 usable) | 12 (11 usable) | 12 (11 usable) | 12 (11 usable)
@@ -56,7 +56,8 @@ Timer/Counter D | 0 | 0 | 0 | 0
 Interfaces | 2xUART, SPI, I2C | 2xUART, SPI, I2C | 2xUART, SPI, I2C | 2xUART, SPI, I2C
 Clock options | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz | Internal 20/16/10/8/5/4/1 MHz
 
-Note: The 0-series and 1-series parts have a 10-bit single-ended ADC with a sampling rate of up to 115 ksps, the 2-series parts have a 12-bit single-ended/differential ADC with a sampling rate of up to 375 ksps.
+Note: The 0-series and 1-series parts have a 10-bit single-ended ADC with a sampling rate of up to 115 ksps, the 2-series parts have a 12-bit single-ended/differential ADC with a sampling rate of up to 375 ksps. The 2-series parts have a DAC for internal use only.
+Users who need to lean heavily on event channels or the CCL are advised to use the 2-series parts. In contrast to the 0/1 series the 2 series has 4 CCL blocks with interrupts, working D-type latch option, and the 6 event channels are normal and well-behaved.
 
 # Preparing Arduino IDE
 - [Install megaTinyCore](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md).
