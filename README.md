@@ -23,6 +23,11 @@ Development board for ATtiny x06/x16/x26 series with USB to serial converter, in
 
 ![ATtiny3216_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny3216_DevBoard_v2/documentation/ATtiny3216_DevBoard_v2_pic1.jpg)
 
+## [ATtiny84 Development Board v2](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny84_DevBoard_v2)
+Development board for ATtiny 24(A)/44(A)/84(A) with ICSP programming header and Arduino IDE support.
+
+![ATtiny84_pic1.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATtiny84_DevBoard_v2/documentation/ATtiny84_DevBoard_v2_pic1.jpg)
+
 ## [ATtiny10 Development Board](https://github.com/wagiminator/AVR-Development-Boards/tree/master/ATtiny10_DevBoard)
 Simple breakout board for the ATtiny10 microcontroller.
 
