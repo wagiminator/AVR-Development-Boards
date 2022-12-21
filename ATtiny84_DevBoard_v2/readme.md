@@ -37,6 +37,7 @@ Note: The 24/44/84 and 24A/44A/84A are functionally identical, have the same sig
 - Open your sketch and click **Upload**.
 
 # References, Links and Notes
+- [EasyEDA Design Files](https://oshwlab.com/wagiminator/attiny84-development-board-v2)
 - [ATtinyCore](https://github.com/SpenceKonde/ATTinyCore)
 - [ATtiny84A Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny24A-44A-84A-DataSheet-DS40002269A.pdf)
 

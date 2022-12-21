@@ -71,6 +71,7 @@ Users who need to lean heavily on event channels or the CCL are advised to use t
 - Now you can upload your sketch.
 
 # References, Links and Notes
+- [EasyEDA Design Files](https://oshwlab.com/wagiminator/attiny-814-development-board-smd_copy)
 - [Getting started with the new ATtiny chips](http://www.technoblogy.com/show?2OCH)
 - [The ATtiny 2-Series](http://www.technoblogy.com/show?3UKF)
 - [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore)

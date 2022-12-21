@@ -83,15 +83,17 @@ The even more powerful AVR DA/DB family of microcontrollers (TQFP-32 package) ca
 In order to be able to use the AVR DA/DB microcontrollers with the Arduino IDE, [DxCore](https://github.com/SpenceKonde/DxCore) must be installed.
 
 # References, Links and Notes
-1. [MegaCoreX by MCUdude](https://github.com/MCUdude/MegaCoreX)
-2. [megaAVR 0-series Family Data Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/megaAVR0-series-Family-Data-Sheet-DS40002015B.pdf)
-3. [ATmega4808 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega4808-09-DataSheet-DS40002173B.pdf)
-4. [TB3262: Getting Started with Writing C-Code for AVR MCUs](http://ww1.microchip.com/downloads/en/Appnotes/AVR1000b-Getting-Started-Writing-C-Code-for-AVR-DS90003262B.pdf)
-5. [TB3213: Getting Started with RTC](http://ww1.microchip.com/downloads/en/Appnotes/TB3213-Getting-Started-with-RTC-DS90003213B.pdf)
-6. [AN2451: Getting Started with Core Independent Peripherals](http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-Peripherals-on-AVR-MCU-00002451C.pdf)
-7. [AN2515: AVR Low-Power Techniques](http://ww1.microchip.com/downloads/en/Appnotes/AN2515-AVR-Low-Power-Techniques-00002515C.pdf)
-8. [AN2543: Temperature Logger with ATtiny817 and SD Card](http://ww1.microchip.com/downloads/en/Appnotes/AN2543-Temperature-Logger-with-ATtiny817-and-SD-Card-v2-00002543C.pdf)
-9. [Core Independent Peripherals Video by Microchip](https://youtu.be/TcqpmupVCXQ)
+1. [EasyEDA Design Files](https://oshwlab.com/wagiminator/atmega4808-development-board_copy)
+2. [MegaCoreX by MCUdude](https://github.com/MCUdude/MegaCoreX)
+3. [DxCore by Spence Konde](https://github.com/SpenceKonde/DxCore)
+4. [megaAVR 0-series Family Data Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/megaAVR0-series-Family-Data-Sheet-DS40002015B.pdf)
+5. [ATmega4808 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega4808-09-DataSheet-DS40002173B.pdf)
+6. [TB3262: Getting Started with Writing C-Code for AVR MCUs](http://ww1.microchip.com/downloads/en/Appnotes/AVR1000b-Getting-Started-Writing-C-Code-for-AVR-DS90003262B.pdf)
+7. [TB3213: Getting Started with RTC](http://ww1.microchip.com/downloads/en/Appnotes/TB3213-Getting-Started-with-RTC-DS90003213B.pdf)
+8. [AN2451: Getting Started with Core Independent Peripherals](http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-Peripherals-on-AVR-MCU-00002451C.pdf)
+9. [AN2515: AVR Low-Power Techniques](http://ww1.microchip.com/downloads/en/Appnotes/AN2515-AVR-Low-Power-Techniques-00002515C.pdf)
+10. [AN2543: Temperature Logger with ATtiny817 and SD Card](http://ww1.microchip.com/downloads/en/Appnotes/AN2543-Temperature-Logger-with-ATtiny817-and-SD-Card-v2-00002543C.pdf)
+11. [Core Independent Peripherals Video by Microchip](https://youtu.be/TcqpmupVCXQ)
 
 ![ATmega4808_DevBoard_pic2.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/documentation/ATmega4808_DevBoard_pic2.jpg)
 ![ATmega4808_DevBoard_pic3.jpg](https://raw.githubusercontent.com/wagiminator/AVR-Development-Boards/master/ATmega4808_DevBoard/documentation/ATmega4808_DevBoard_pic3.jpg)
