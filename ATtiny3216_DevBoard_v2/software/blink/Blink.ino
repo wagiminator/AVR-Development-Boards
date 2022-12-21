@@ -1,5 +1,5 @@
 // ===================================================================================
-// Project:   Hello World Demo - ATtiny814
+// Project:   Hello World Demo - ATtiny3216
 // Version:   v1.0
 // Year:      2022
 // Author:    Stefan Wagner
@@ -14,30 +14,33 @@
 //
 // Wiring:
 // -------
-//                            +-\/-+
-//                      Vcc  1|°   |14  GND
-//         --- !SS AIN4 PA4  2|    |13  PA3 AIN3 SCK ---- 
-//         ------- AIN5 PA5  3|    |12  PA2 AIN2 MISO --- 
-//         --- DAC AIN6 PA6  4|    |11  PA1 AIN1 MOSI --- 
-//     LED ------- AIN7 PA7  5|    |10  PA0 AIN0 UPDI --- USB
-//     USB -------- RXD PB3  6|    |9   PB0 AIN11 SCL --- 
-//     USB -------- TXD PB2  7|    |8   PB1 AIN10 SDA --- 
-//                            +----+
+//                             +--\/--+
+//                       Vcc  1|°     |20  GND
+//         ---- !SS AIN4 PA4  2|      |19  PA3 AIN3 SCK ---- 
+//         -------- AIN5 PA5  3|      |18  PA2 AIN2 MISO --- 
+//         ---- DAC AIN6 PA6  4|      |17  PA1 AIN1 MOSI --- 
+//     LED -------- AIN7 PA7  5|      |16  PA0 AIN0 UPDI --- USB
+//         -------- AIN8 PB5  6|      |15  PC3 -------------
+//         -------- AIN9 PB4  7|      |14  PC2 -------------
+//     USB --------- RXD PB3  8|      |13  PC1 -------------
+//     USB --------- TXD PB2  9|      |12  PC0 -------------
+//         --- SDA AIN10 PB1 10|      |11  PB0 AIN11 SCL --- 
+//                             +------+
 //
 // Compilation Settings:
 // ---------------------
 // Core:          megaTinyCore (https://github.com/SpenceKonde/megaTinyCore)
-// Board:         ATtiny1614/1604/814/804/414/404/214/204
+// Board:         ATtiny3216/3206/1616/1606/816/806/416/406
 // Chip:          choose the one on your board
 // Clock:         5 MHz internal
 //
 // Leave the rest on default settings. Select "SerialUPDI" as programmer in the
-// Arduino IDE and set the Serial Mode Switch on the board to "P". Don't forget
+// Arduino IDE and set the Serial Mode Switch on the board to "UPDI". Don't forget
 // to "Burn bootloader"! Compile and upload the code. Set the Serial Mode Switch
-// to "S" and use a serial monitor with 9600 BAUD.
+// to "UART" and use a serial monitor with 9600 BAUD.
 //
-// No Arduino core functions or libraries are used. Use the makefile if you want
-// to compile without Arduino IDE.
+// No Arduino core functions or libraries are used. Use the makefile to compile
+// and upload without Arduino IDE.
 //
 // Fuse Settings: 0:0x00 1:0x00 2:0x02 4:0x00 5:0xC5 6:0x04 7:0x00 8:0x00
 
@@ -54,16 +57,20 @@
 #define PIN_LED     PA7       // pin the LED is connected to
 #define UART_BAUD   9600      // UART BAUD rate
 
+// Enumerate pin designators
+enum {PA0, PA1, PA2, PA3, PA4, PA5, PA6, PA7, 
+      PB0, PB1, PB2, PB3, PB4, PB5, PB6, PB7,
+      PC0, PC1, PC2, PC3, PC4, PC5, PC6, PC7};
+
 // Pin manipulation macros
-enum {PA0, PA1, PA2, PA3, PA4, PA5, PA6, PA7, PB0, PB1, PB2, PB3};    // enumerate pin designators
-#define pinInput(x)       (&VPORTA.DIR)[((x)&8)>>1] &= ~(1<<((x)&7))  // set pin to INPUT
-#define pinOutput(x)      (&VPORTA.DIR)[((x)&8)>>1] |=  (1<<((x)&7))  // set pin to OUTPUT
-#define pinLow(x)         (&VPORTA.OUT)[((x)&8)>>1] &= ~(1<<((x)&7))  // set pin to LOW
-#define pinHigh(x)        (&VPORTA.OUT)[((x)&8)>>1] |=  (1<<((x)&7))  // set pin to HIGH
-#define pinToggle(x)      (&VPORTA.IN )[((x)&8)>>1] |=  (1<<((x)&7))  // TOGGLE pin
-#define pinRead(x)        ((&VPORTA.IN)[((x)&8)>>1] &   (1<<((x)&7))) // READ pin
-#define pinDisable(x)     (&PORTA.PIN0CTRL)[(((x)&8)<<2)+((x)&7)] |= PORT_ISC_INPUT_DISABLE_gc
-#define pinPullup(x)      (&PORTA.PIN0CTRL)[(((x)&8)<<2)+((x)&7)] |= PORT_PULLUPEN_bm
+#define pinInput(x)       (&VPORTA.DIR)[((x)&24)>>1] &= ~(1<<((x)&7))  // set pin to INPUT
+#define pinOutput(x)      (&VPORTA.DIR)[((x)&24)>>1] |=  (1<<((x)&7))  // set pin to OUTPUT
+#define pinLow(x)         (&VPORTA.OUT)[((x)&24)>>1] &= ~(1<<((x)&7))  // set pin to LOW
+#define pinHigh(x)        (&VPORTA.OUT)[((x)&24)>>1] |=  (1<<((x)&7))  // set pin to HIGH
+#define pinToggle(x)      (&VPORTA.IN )[((x)&24)>>1] |=  (1<<((x)&7))  // TOGGLE pin
+#define pinRead(x)        ((&VPORTA.IN)[((x)&24)>>1] &   (1<<((x)&7))) // READ pin
+#define pinDisable(x)     (&PORTA.PIN0CTRL)[(((x)&24)<<2)+((x)&7)] |= PORT_ISC_INPUT_DISABLE_gc
+#define pinPullup(x)      (&PORTA.PIN0CTRL)[(((x)&24)<<2)+((x)&7)] |= PORT_PULLUPEN_bm
 #define pinAIN(x)         ((x)<8 ? (x) : (19-(x)))                    // convert pin to ADC port
 
 // ===================================================================================
