@@ -72,7 +72,7 @@ Users who need to lean heavily on event channels or the CCL are advised to use t
 - Go to "Tools" and set the desired board options.
 - Go to "Tools" -> "Programmer" and select "SerialUPDI".
 - Connect the board via USB to your PC.
-- Set the Serial Mode Switch on the board to "P" (Programming Mode).
+- Set the Serial Mode Switch on the board to "UPDI".
 - Go to "Tools" -> "Burn Bootloader".
 - Now you can upload your sketch.
 
