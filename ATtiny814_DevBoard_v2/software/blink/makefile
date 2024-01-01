@@ -1,101 +1,105 @@
 # ===================================================================================
-# Project:  Blink Demo
+# Project:  ATtiny814 Example
 # Author:   Stefan Wagner
-# Year:     2022
-# URL:      https://github.com/wagiminator     
+# Year:     2021
+# URL:      https://github.com/wagiminator    
 # ===================================================================================
 # Type "make help" in the command line.
 # ===================================================================================
 
-# Input and Output File Names
-SKETCH  = Blink.ino
-TARGET  = blink
+# Files and Folders
+MAINFILE = blink.c
+TARGET   = blink
+INCLUDE  = include
+TOOLS    = tools
 
 # Microcontroller Settings
-DEVICE ?= attiny814
-CLOCK   = 5000000
-FUSE0   = 0x00
-FUSE1   = 0x00
-FUSE2   = 0x02
-FUSE4   = 0x00
-FUSE5   = 0xC5
-FUSE6   = 0x04
-FUSE7   = 0x00
-FUSE8   = 0x00
+DEVICE  ?= attiny814
+F_CPU    = 20000000
+FUSE0    = 0x00
+FUSE1    = 0x00
+FUSE4    = 0x00
+FUSE5    = 0xC5
+FUSE6    = 0x04
+FUSE7    = 0x00
+FUSE8    = 0x00
 
 # Toolchain
-CC       = avr-gcc
-OBJCOPY  = avr-objcopy
-OBJDUMP  = avr-objdump
-AVRSIZE  = avr-size
-PYPROG   = python3 -u ./tools/tinyupdi.py -d $(DEVICE)
-CLEAN    = rm -f *.lst *.obj *.cof *.list *.map *.eep.hex *.o *.s *.d
+PREFIX   = avr
+CC       = $(PREFIX)-gcc
+OBJCOPY  = $(PREFIX)-objcopy
+OBJDUMP  = $(PREFIX)-objdump
+OBJSIZE  = $(PREFIX)-size
+ISPTOOL  = python3 $(TOOLS)/tinyupdi.py
+CLEAN    = rm -f *.lst *.obj *.cof *.list *.map *.eep.hex *.o *.d
 
 # Compiler Flags
-CFLAGS   = -Wall -flto -Os -mmcu=$(DEVICE) -DF_CPU=$(CLOCK) -x c++
-CFLAGS  += -B include/dev/$(DEVICE) -I include
+CFLAGS   = -Os -flto -Wall -mmcu=$(DEVICE) -DF_CPU=$(F_CPU) -I$(INCLUDE) -I.
+LDFLAGS  = -B $(INCLUDE)/dev/$(DEVICE)
+CFILES   = $(MAINFILE) $(wildcard $(INCLUDE)/*.c) $(wildcard $(INCLUDE)/*.S)
 
 # Symbolic Targets
 help:
 	@echo "Use the following commands:"
-	@echo "make all       compile and build $(TARGET).elf/.bin/.hex/.asm for $(DEVICE)"
-	@echo "make hex       compile and build $(TARGET).hex for $(DEVICE)"
-	@echo "make asm       compile and disassemble to $(TARGET).asm for $(DEVICE)"
-	@echo "make bin       compile and build $(TARGET).bin for $(DEVICE)"
-	@echo "make upload    compile and upload to $(DEVICE)"
-	@echo "make fuses     burn fuses of $(DEVICE)"
-	@echo "make install   compile, upload and burn fuses for $(DEVICE)"
+	@echo "make all       compile and build $(TARGET).elf/.bin/.hex/.asm"
+	@echo "make hex       compile and build $(TARGET).hex"
+	@echo "make asm       compile and disassemble to $(TARGET).asm"
+	@echo "make bin       compile and build $(TARGET).bin"
+	@echo "make flash     compile and upload to MCU"
+	@echo "make fuses     write fuses to MCU"
 	@echo "make clean     remove all build files"
 
-all:	buildelf buildbin buildhex buildasm removetemp size
+$(TARGET).elf: $(CFILES)
+	@echo "Building $(TARGET).elf ..."
+	@$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
 
-elf:	buildelf removetemp size
+$(TARGET).lst: $(TARGET).elf
+	@echo "Building $(TARGET).lst ..."
+	@$(OBJDUMP) -S $^ > $(TARGET).lst
 
-bin:	buildelf buildbin removetemp size removeelf
+$(TARGET).map: $(TARGET).elf
+	@echo "Building $(TARGET).map ..."
+	@$(OBJDUMP) -t $^ > $(TARGET).map
 
-hex:	buildelf buildhex removetemp size removeelf
+$(TARGET).bin: $(TARGET).elf
+	@echo "Building $(TARGET).bin ..."
+	@$(OBJCOPY) -O binary $< $(TARGET).bin
 
-asm:	buildelf buildasm removetemp size removeelf
+$(TARGET).hex: $(TARGET).elf
+	@echo "Building $(TARGET).hex ..."
+	@$(OBJCOPY) -O ihex $< $(TARGET).hex
 
-flash:	install
+$(TARGET).asm: $(TARGET).elf
+	@echo "Disassembling to $(TARGET).asm ..."
+	@$(OBJDUMP) -d $(TARGET).elf > $(TARGET).asm
 
-install:	bin
-	@echo "Installing $(TARGET).bin to $(DEVICE) ..."
-	@$(PYPROG) --fuses 0:$(FUSE0) 1:$(FUSE1) 2:$(FUSE2) 4:$(FUSE4) 5:$(FUSE5) 6:$(FUSE6) 7:$(FUSE7) 8:$(FUSE8) --flash $(TARGET).bin
+all:	$(TARGET).lst $(TARGET).map $(TARGET).bin $(TARGET).hex $(TARGET).asm size
 
-upload:	bin
-	@echo "Uploading $(TARGET).bin to $(DEVICE) ..."
-	@$(PYPROG) --flash $(TARGET).bin
+elf:	$(TARGET).elf removetemp size
+
+bin:	$(TARGET).bin removetemp size removeelf
+
+hex:	$(TARGET).hex removetemp size removeelf
+
+asm:	$(TARGET).asm removetemp size removeelf
+
+flash:	$(TARGET).bin size removeelf
+	@echo "Uploading to $(DEVICE) ..."
+	@$(ISPTOOL) -d $(DEVICE) -t $(F_CPU) -f $(TARGET).bin -fs 6:$(FUSE6) 7:$(FUSE7) 8:$(FUSE8)
 
 fuses:
-	@echo "Burning fuses of $(DEVICE) ..."
-	@$(PYPROG) --fuses 0:$(FUSE0) 1:$(FUSE1) 2:$(FUSE2) 4:$(FUSE4) 5:$(FUSE5) 6:$(FUSE6) 7:$(FUSE7) 8:$(FUSE8)
+	@echo "Writing fuses to $(DEVICE) ..."
+	@$(ISPTOOL) -t $(F_CPU) -fs 0:$(FUSE0) 1:$(FUSE1) 4:$(FUSE4) 5:$(FUSE5) 6:$(FUSE6) 7:$(FUSE7) 8:$(FUSE8)
 
 clean:
 	@echo "Cleaning all up ..."
 	@$(CLEAN)
 	@rm -f $(TARGET).elf $(TARGET).bin $(TARGET).hex $(TARGET).asm
 
-buildelf:
-	@echo "Compiling $(SKETCH) for $(DEVICE) @ $(CLOCK)Hz ..."
-	@$(CC) $(CFLAGS) $(SKETCH) -o $(TARGET).elf
-
-buildbin:
-	@echo "Building $(TARGET).bin ..."
-	@$(OBJCOPY) -O binary -R .eeprom $(TARGET).elf $(TARGET).bin
-
-buildhex:
-	@echo "Building $(TARGET).hex ..."
-	@$(OBJCOPY) -j .text -j .data -O ihex $(TARGET).elf $(TARGET).hex
-
-buildasm:
-	@echo "Disassembling to $(TARGET).asm ..."
-	@$(OBJDUMP) -d $(TARGET).elf > $(TARGET).asm
-
 size:
 	@echo "------------------"
-	@echo "FLASH: $(shell $(AVRSIZE) -d $(TARGET).elf | awk '/[0-9]/ {print $$1 + $$2}') bytes"
-	@echo "SRAM:  $(shell $(AVRSIZE) -d $(TARGET).elf | awk '/[0-9]/ {print $$2 + $$3}') bytes"
+	@echo "FLASH: $(shell $(OBJSIZE) -d $(TARGET).elf | awk '/[0-9]/ {print $$1 + $$2}') bytes"
+	@echo "SRAM:  $(shell $(OBJSIZE) -d $(TARGET).elf | awk '/[0-9]/ {print $$2 + $$3}') bytes"
 	@echo "------------------"
 
 removetemp:
